@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Linkify
 
-## Getting Started
+**Linkify** is a free and open-source URL shortener that makes sharing links simple and efficient. With Linkify, you can shorten long URLs, making them more manageable and user-friendly. Whether you're sharing links on social media, emails, or anywhere else, Linkify has you covered.
 
-First, run the development server:
+## Features
+
+- Shorten long URLs into concise, shareable links.
+- Easy-to-use interface for creating and managing links.
+- Free and open-source, welcoming contributions from the community.
+- Built with Next.js for modern, high-performance web applications.
+
+## Installation
+
+To get started with Linkify, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/NamanS4ini/Linkify.git
+cd linkify
+npm install
+```
+
+## Environment Variables
+
+To run Linkify, you need to set up the following environment variables in a `.env.local` file at the root of your project:
+
+```env
+MONGODB_URI = <your-mongodb-connection-string>
+NEXT_PUBLIC_PAGE_URL = <your-application-base-url>
+```
+
+- `MONGODB_URI`: The connection string for your MongoDB database.
+- `NEXT_PUBLIC_PAGE_URL`: The base URL of your Linkify application (e.g., `http://localhost:3000`).
+
+## Usage
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at `http://localhost:3000` by default.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+For production builds:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! If you'd like to contribute to Linkify, please follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear messages.
+4. Push your changes to your fork.
+5. Create a pull request to the main repository.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
+For questions, feedback, or collaboration, feel free to open an issue on the repository.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Happy coding with Linkify! 🚀
